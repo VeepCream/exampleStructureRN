@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "patch-package",
-    "android": "react-native run-android",
+    "android": "ENVFILE=.env.dev react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -19,6 +19,7 @@
     "prop-types": "^15.5.9",
     "react": "16.13.1",
     "react-native": "0.63.3",
+    "react-native-config": "^1.4.1",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-material-textfield": "^0.16.1",
     "react-native-reanimated": "^1.13.2",

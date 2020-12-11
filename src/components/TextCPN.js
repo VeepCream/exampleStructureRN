@@ -4,7 +4,7 @@ import { Text, StyleSheet, View } from 'react-native';
 export default function (props) {
 
     return (
-        <Text style={styles.header}>Showing details for {item}</Text>
+        <Text style={styles.header}>Showing details for {props.item}</Text>
     );
 }
 

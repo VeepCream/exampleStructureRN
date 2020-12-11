@@ -6,11 +6,14 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
+import Config from "react-native-config";
 
 export default function HomeScreen({ navigation }) {
   const [items] = React.useState(
     new Array(20).fill(null).map((_, idx) => idx + 1)
   );
+
+  console.log("Config",Config);
 
   const onOpacityPress = (item) => navigation.navigate('Details', item);
 

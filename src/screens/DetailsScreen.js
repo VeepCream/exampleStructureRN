@@ -8,8 +8,8 @@ export default function (props) {
 
   return (
     <View testID={"DetailsScreen"}>
-      <TextCPN />
-      <TextCPN style={styles.body}>the number you have chosen is {item}</TextCPN>
+      <TextCPN item={item}/>
+      <Text style={styles.body}>the number you have chosen is {item}</Text>
     </View>
   );
 }
