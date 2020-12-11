@@ -13,8 +13,6 @@ export default function HomeScreen({ navigation }) {
     new Array(20).fill(null).map((_, idx) => idx + 1)
   );
 
-  console.log("Config",Config);
-
   const onOpacityPress = (item) => navigation.navigate('Details', item);
 
   return (
@@ -26,8 +24,7 @@ export default function HomeScreen({ navigation }) {
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => onOpacityPress(item)}
-            style={styles.row}
-          >
+            style={styles.row}>
             <Text>Item number {item}</Text>
           </TouchableOpacity>
         )}
